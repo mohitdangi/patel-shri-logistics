@@ -51,6 +51,7 @@
     .circle i {
         font-size: 35px;
         color: white;
+        text-align: center;
     }
 
     .step-number {
@@ -69,6 +70,7 @@
     .step h3 {
         font-size: 16px;
         margin-top: 10px;
+        
     }
 
     .step-info {
