@@ -10,10 +10,10 @@
         width: 40%;
     }
 
-    .step-container {
+    /* .step-container {
         padding-left: 50px;
         padding-right: 50px;
-    }
+    } */
 
     .superset {
         padding: 0px;
@@ -79,6 +79,9 @@
     .book-transport h2 {
         font-size: 38px;
 
+    }
+    .fas{
+        margin:0px;
     }
 }
 
