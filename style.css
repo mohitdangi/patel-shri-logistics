@@ -10,7 +10,9 @@
 ul li{
     list-style: none;
 }
-
+a{
+  text-decoration: none;
+}
 body {
     font-family: 'Inter', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -28,7 +30,7 @@ body {
     padding-left: 23px;
     padding-top: 15px;
     padding-bottom: 15px;
-    gap: 20px;
+    gap: 10px;
     overflow: hidden;
 }
 
@@ -41,6 +43,7 @@ body {
 .contact-div {
     display: flex;
     align-items: center;
+    gap: 4px;
 }
 
 .social-media-contact {
@@ -64,7 +67,7 @@ body {
 .fas {
     color: rgba(226, 86, 57, 1);
     font-size: 0.6 rem;
-    margin-right: 0.3rem;
+    /* margin-right: 0.3rem; */
 }
 
 /* ********************* NAVBAR ********************** */
@@ -421,8 +424,8 @@ body {
   
   .transportation-info .border-top {
     border-top: 1px dashed #000000;
-    margin: 20px auto;
-    max-width: 370px;
+    margin: 0px auto;
+    max-width: 410px;
   }
   
   .transport-set {
@@ -541,7 +544,7 @@ body {
     /* Align items vertically */
     /* padding: 40px 0; */
     background-color: #f2f2f2;
-    height: 520px;
+
     margin: 1.5rem 0;
   }
   
@@ -1012,8 +1015,8 @@ body {
     /* height: 300px; */
   }
   
-  .footer-section-about h3 {
-    font-size: 13px !important;
+  .footer-section-about h3 a {
+    font-size: 14px !important;
     color: rgba(42, 49, 60, 1) !important;
     transition: transform 0.2s;
     cursor: pointer;
@@ -1032,7 +1035,7 @@ body {
   
   .footer-section h3 {
     font-size: 18px;
-    margin-top: 10px;
+    margin-bottom: 10px;
     /* Add some space between headings */
   }
   
