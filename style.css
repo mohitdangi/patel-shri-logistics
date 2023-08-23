@@ -6,7 +6,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling for the whole page */
+}
 ul li{
     list-style: none;
 }
@@ -104,6 +106,7 @@ body {
     padding-bottom: 2px;
     transition: all 0.3s ease;
     font-size: 0.9rem;
+    transition: 1s; 
 }
 
 .nav-links li{
