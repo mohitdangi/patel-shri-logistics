@@ -398,9 +398,10 @@ body {
     margin-top: 10px;
   }
   
-  .dummy-info {
+  .dummy-info a{
     font-size: 14px;
     margin-top: 10px;
+    color: inherit !important;
   }
   
   /* Previous styles (from previous sections) remain the same */
