@@ -33,6 +33,27 @@ document.getElementById("get-quote-button").addEventListener("click", function()
     window.open(whatsappUrl, "_blank");
 });
 
+document.getElementById("get-quote-button2").addEventListener("click", function() {
+    var phoneNumber = "6260036264"; // Replace with the actual phone number
+    var instantQuoteMessage = "Thank you for requesting an instant quote! Please tell the location from where to pick and drop our Package";
+
+    var encodedMessage = encodeURIComponent(instantQuoteMessage);
+    var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
+
+    window.open(whatsappUrl, "_blank");
+});
+
+document.getElementById("get-quote-button3").addEventListener("click", function() {
+    var phoneNumber = "6260036264"; // Replace with the actual phone number
+    var instantQuoteMessage = "Thank you for requesting an instant quote! Please tell the location from where to pick and drop our Package";
+
+    var encodedMessage = encodeURIComponent(instantQuoteMessage);
+    var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
+
+    window.open(whatsappUrl, "_blank");
+});
+
+
 document.getElementById("send-whatsapp").addEventListener("click", function() {
     var pickup = document.getElementById("pickupInput").value;
     var drop = document.getElementById("dropInput").value;
