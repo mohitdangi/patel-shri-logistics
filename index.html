@@ -32,7 +32,7 @@
                 <i class="fas fa-envelope"></i><a href="mailto:patelsri@gmail.com" class="email">patelsri@gmail.com</a>
             </div>
             <div class="contact-div">
-                <i class="fas fa-phone"></i><a href="tel:+9167290200927" class="contact">+91 67290200927</a>
+                <i class="fas fa-phone"></i><a href="tel:6260036264" class="contact">+91 6260036264</a>
             </div>
         </div>
         <div class="social-media-contact">
@@ -50,13 +50,13 @@
             <div></div>
         </div>
         <ul class="nav-links">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">OUR SERVICES</a></li>
-            <li><a href="#">OUR FLEET</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#how">HOW WE WORK</a></li>
+            <li><a href="#testimonials">TESTIMONIALS</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
         </ul>
-        <button class="quote-button">GET A QUOTE</button>
+        <button class="quote-button"  id="get-quote-button">GET A QUOTE</button>
 
         <script>
             const hamburger = document.querySelector('.hamburger');
@@ -69,13 +69,14 @@
     </div>
 
 
-    <div class="header">
+    <div class="header" id="home">
         <div class="text-content">
             <h1>Patel Shree Logistics -<br> Your Trusted Transport<br> Partner</h1>
             <p>We operate daily across Madhya Pradesh, providing reliable transportation services for various needs. From local to long distances, we've got you covered. Contact us today for efficient and trusted hauling solutions.</p>
         </div>
         <div class="buttons">
-            <button  class="book-now" href="tel:6260036364">BOOK TRUCK NOW</button>
+            <button class="book-now" id="book-now-button">BOOK TRUCK NOW</button>
+
 
             <button class="get-quote" id="get-quote-button">GET INSTANT QUOTE</button>
 
@@ -113,7 +114,7 @@
             </div>
         </div>
     </div> -->
-    <section class="how-it-works">
+    <section class="how-it-works" id="how">
         <h2>How It Works</h2>
         <div class="work-border"></div>
 
@@ -219,12 +220,13 @@
         <br>
         <br>
         <div class="input-container">
-            <input type="text" placeholder="Bhopal,Madhya pradesh India">
-            <input type="text" placeholder="Indore, Madhya Pradesh India">
-            <button><i class="fas fa-arrow-right"></i>Book Now</button>
+            <input type="text" id="pickupInput" placeholder="Pickup location">
+            <input type="text" id="dropInput" placeholder="Drop location">
+        
+            <button  id="send-whatsapp"><i class="fas fa-arrow-right"></i>Book Now</button>
         </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about">
         <div class="about-text">
             <h2>About Us</h2>
             <div class="border"></div>
@@ -243,17 +245,17 @@
             <img src="./assets/pngwing_com_(1)-bhozWi2XE-transformed 1.png" alt="">
         </div>
     </section>
-    <section class="daily-ride">
+    <section class="daily-ride" id="daily">
         <h2>Daily Bhopal to Indore Routes</h2>
         <p class="daily-info">
             Your information is secure and encrypted, consectetur adipisicing elit, sed do eiusmod tempor
             <br> incididunt ut labore et dolore magna aliquat enim ad minim.
         </p>
         <div class="center-button">
-            <button>GET A QUOTE INSTANTLY</button>
+            <button id="get-quote-button">GET A QUOTE INSTANTLY</button>
         </div>
     </section>
-    <section class="container">
+    <section class="container" id="testimonials">
    
         <div class="testimonial mySwiper">
             <h2 class="testimonial-heading">Client Testimonials</h2> 
@@ -306,7 +308,7 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
-    <section class="why-choose-us">
+    <section class="why-choose-us" is="choose">
         <div class="why-photo">
 
             <img src="./assets/pngwing_com_(4)-kNEO4qu_l-transformed 2.png" alt="Photo">
@@ -331,26 +333,26 @@ Choose us for dependable logistics solutions. With years of experience, a growin
 
         </div>
     </section>
-    <section class="popular-trucks">
+    <section class="popular-trucks" id="trucks">
         <h2 class="centered-heading">Our Popular Trucks</h2>
         <div class="dashed-border"></div>
         <div class="truck-card">
             <img src="./assets/pngwing_com_(4)-kNEO4qu_l-transformed 2.png" alt="Truck 1">
-            <p class="truck-name">Bolero</p>
+            <p class="truck-name">Super Carry</p>
         </div>
         <div class="truck-card">
             <img src="./assets/pngwing_com_(3)-toiw4-HkY-transformed 1.png" alt="Truck 2">
-            <p class="truck-name">Bolero</p>
+            <p class="truck-name">Bolero Pick-up</p>
         </div>
         <div class="truck-card">
             <img src="./assets/pngwing_com_(1)-bhozWi2XE-transformed 1.png" alt="Truck 3">
-            <p class="truck-name">Bolero</p>
+            <p class="truck-name">Eicher Pick-up</p>
         </div>
-        <buton class="read-more">
+        <!-- <buton class="read-more">
             read more
-        </buton>
+        </buton> -->
     </section>
-    <div class="wrapper">
+    <div class="wrapper" id="faqs">
         <h1>Our Transport Expertise</h1>
         <div class="faq-dotted"></div>
         <div class="wrapper-para">
@@ -441,7 +443,7 @@ Choose us for dependable logistics solutions. With years of experience, a growin
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.522716271229!2d77.51287397301202!3d23.260449061036162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c41080ff06cf3%3A0xcdbfc97fe1ef6efb!2schawani%20adampur%20bhopal!5e0!3m2!1sen!2sin!4v1690718879201!5m2!1sen!2sin"
                     width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            <div class="contact-info">
+            <div class="contact-info" id="contact">
                 <h2>We’d love to hear from you</h2>
                 <p>
                     Feel free to contact us for any inquiries or assistance at our contact-deatails  below: We love to assist you with your needs
@@ -462,11 +464,12 @@ Choose us for dependable logistics solutions. With years of experience, a growin
             </p>
         </div>
         <div class="footer-section footer-section-about">
-            <h3>PRODUCT</h3>
-            <h3>SERVICES</h3>
-            <h3>ABOUT US</h3>
-            <h3>WHY CHOOSE US</h3>
-            <h3>FAQ’s</h3>
+            <h3><a href="#trucks">Trcuks</a></h3>
+            <h3><a href="#daily">Daily-Route</a></h3>
+            <h3><a href="#about">ABOUT US</a></h3>
+            <h3><a href="#choose">WHY CHOOSE US</a></h3>
+            <h3><a href="#faqs">FAQ’s</a></h3>
+            
         </div>
         <div class="footer-section mobile-social">
             <h3 class="social-media">
