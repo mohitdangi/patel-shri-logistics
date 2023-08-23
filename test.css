@@ -1,0 +1,435 @@
+/* Large Devices (Laptops and Desktops) */
+@media only screen and (min-width: 970px) and (max-width: 1199.98px) and (orientation: portrait) {
+
+    /* CSS rules for Large Devices */
+    .get-quota {
+        display: none;
+    }
+
+    .background-image {
+        width: 40%;
+    }
+
+    .step-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .superset {
+        padding: 0px;
+    }
+
+    .mobile-social {
+        display: none;
+    }
+
+    .heading {
+        font-size: 18px;
+    }
+
+    .how-it-works h2 {
+        font-size: 18px;
+    }
+
+    .step {
+        flex: 1;
+        text-align: center;
+        max-width: 250px;
+    }
+
+    .circle {
+        background-color: #a5b0c0;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+    }
+
+    .circle i {
+        font-size: 35px;
+        color: white;
+    }
+
+    .step-number {
+        background-color: rgba(226, 86, 57, 1);
+        padding-top: 5px;
+        align-items: center;
+        border-radius: 50%;
+        color: white;
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin: 10px auto;
+    }
+
+    .step h3 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .step-info {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .book-transport h2 {
+        font-size: 38px;
+
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 834px) {
+    .contact-container {
+        display: none;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav .menu-btn i {
+        display: block;
+    }
+
+    #click:checked~.menu-btn i:before {
+        content: "\f00d";
+    }
+
+    nav ul {
+        position: fixed;
+        z-index: 1;
+        top: 45px;
+        left: -100%;
+        background: rgba(226, 86, 57, 1);
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    #click:checked~ul {
+        left: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    nav ul li a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    #click:checked~ul li a {
+        margin-left: 0px;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        background: none;
+        color: cyan;
+    }
+
+    .get-quota {
+        display: none;
+    }
+
+    .background-image {
+        display: none;
+    }
+
+
+
+    /* Adjust the layout to show one card per row */
+    .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        margin: 20px 0;
+        height: 100%;
+        width: 80%;
+    }
+
+
+
+    .how-it-works .step-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .how-it-works .step {
+        width: 90%;
+        max-width: 300px;
+        margin: 10px;
+    }
+
+
+    .transportation-info .info-column {
+        flex-direction: column;
+    }
+
+    .transportation-info .superset {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .transport-set {
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    .info-column {
+        flex-direction: column;
+    }
+
+    .info-column-ques,
+    .info-column-ans {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-column-ques p,
+    .info-column-ans p {
+        font-size: 14px;
+    }
+
+    .transportation-info h2 {
+        font-size: 22px;
+    }
+
+    .transportation-info .border-top {
+        margin: 10px auto;
+        /* Stretch items to full width */
+    }
+
+    .book-transport h2 {
+        font-size: 36px;
+    }
+
+    .book-transport p {
+        font-size: 16px;
+    }
+
+    .input-container {
+        flex-direction: column;
+        align-items: center;
+        background-color: inherit;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .input-container input {
+        border: 1px solid #000000;
+    }
+
+    .input-container input,
+    .input-container button {
+        margin: 0px;
+        padding: 20px;
+
+        width: 80%;
+        /* Set width to 100% for full width on mobile */
+    }
+
+    .input-container button {
+        margin-top: 20px;
+    }
+
+    .truck-card{
+        margin: 10px;
+    }
+
+    /* Adjust the layout for "About Us" section */
+    .about-us {
+        flex-direction: column;
+        align-items: left;
+        /* padding: 40px; */
+        padding: 0px;
+        padding-top: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0px;
+
+        height: max-content;
+    }
+
+    .about-text {
+        text-align: left;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 20px;
+        /* Add some spacing between text and image on mobile */
+    }
+
+    .border {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .about-photo {
+        /* Display the image with full height on mobile */
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .daily-ride {
+        padding: 10px;
+    }
+
+
+    .contact-us {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .why-choose-us {
+        display: flex;
+        flex-direction: column-reverse;
+        /* Stack the items in a column */
+        width: 100%;
+        align-items: left;
+        /* Center the content horizontally */
+    }
+
+    .why-content {
+        text-align: left;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        padding-left: 20px;
+    }
+
+    .why-content h2 p ul li {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .why-photo {
+        align-items: center;
+        width: 90%;
+        /* Take full width */
+        height: auto;
+        margin-top: 20px;
+        padding-left: 10px;
+        border: none;
+        /* Add some spacing between content and image */
+    }
+
+    .wrapper {
+        margin-top: 20px;
+    }
+
+    .our-location {
+        padding: 10px 10px;
+        display: block;
+        
+
+    }
+
+    .location-map {
+        width: 100%;
+        height: auto;
+        border: none;
+        margin: 10px 20px;
+    }
+
+    .contact-info p {
+        text-align: left;
+        margin: 0;
+        margin: 20px 0px;
+    }
+
+    .location-details {
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        padding: 0;
+        border: none;
+        width: 100% ;
+        border-bottom: 1px dashed #e25539;
+        /* margin-bottom: 20px; */
+        text-align: center;
+    }
+
+    .social-media {
+        display: block;
+        font-size: 30px;
+        margin: 10px 0px;
+    }
+
+    .social-media i {
+        margin: 0px 20px;
+    }
+
+    .footer-section-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+
+    .footer-section-contact {
+        margin-bottom: 20px;
+    }
+
+    .footer-section p {
+        margin-bottom: 20px;
+    }
+
+    .terms {
+        margin: 0px;
+        padding: 10px 0px;
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-content p,
+    .right-content p {
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+
