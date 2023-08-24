@@ -58,13 +58,17 @@
         </ul>
         <button class="quote-button"  id="get-quote-button2">GET A QUOTE</button>
 
-        <script>
-            const hamburger = document.querySelector('.hamburger');
-            const navLinks = document.querySelector('.nav-links');
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const lines = document.querySelectorAll('.hamburger div');
 
-            hamburger.addEventListener('click', () => {
-                navLinks.classList.toggle('show');
-            });
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+        lines.forEach(line => line.classList.toggle('change'));
+    });
+
+
         </script>
     </div>
 
@@ -250,10 +254,10 @@ Rest assured, your item will be delivered swiftly and securely, without compromi
         </div>
     </section>
     <section class="daily-ride" id="daily">
-        <h2>Daily Bhopal to Indore Routes</h2>
+        <h2>Daily All MP Routes</h2>
         <p class="daily-info">
-            Your information is secure and encrypted, consectetur adipisicing elit, sed do eiusmod tempor
-            <br> incididunt ut labore et dolore magna aliquat enim ad minim.
+          
+Navigating through all logistics MP routes, we guarantee seamless<br> and reliable transportation solutions for efficient delivery across various destinations.
         </p>
         <div class="center-button">
             <button id="get-quote-button3">GET A QUOTE INSTANTLY</button>
@@ -438,8 +442,8 @@ Choose us for dependable logistics solutions. With years of experience, a growin
     </div>
     <div class="our-location-parent">
 
-        <h1>Our Transport Expertise</h1>
-        <div class="faq-dotted"></div>
+        <h1>Our Contact Details</h1>
+        <div class="contact-dotted"></div>
         <section class="our-location">
 
             <div class="location-map">
