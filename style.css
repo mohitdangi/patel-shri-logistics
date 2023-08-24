@@ -15,9 +15,11 @@ a{
 body {
     font-family: 'Inter', sans-serif;
     font-family: 'Roboto', sans-serif;
+    width:100%;
     overflow-x: hidden;
     scroll-behavior: smooth; 
     background-color: red;
+    
 }
 
 .contact-container {
