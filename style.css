@@ -6,9 +6,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth; /* Enable smooth scrolling for the whole page */
-}
 ul li{
     list-style: none;
 }
@@ -19,6 +16,8 @@ body {
     font-family: 'Inter', sans-serif;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth; 
+    background-color: red;
 }
 
 .contact-container {
